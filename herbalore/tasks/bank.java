@@ -2,7 +2,6 @@ package org.tokcity.tasks;
 
 import org.rspeer.runetek.adapter.scene.SceneObject;
 import org.rspeer.runetek.api.commons.Time;
-import org.rspeer.runetek.api.commons.math.Random;
 import org.rspeer.runetek.api.component.Bank;
 import org.rspeer.runetek.api.component.tab.Inventory;
 import org.rspeer.runetek.api.scene.SceneObjects;
@@ -37,7 +36,7 @@ public class bank extends Task {
                 Time.sleepUntil(()->Inventory.contains(GRIMY_HARRALANDER), 2000);
             }
             Bank.withdraw(VIAL_WATER, 14);{
-                Time.sleep(Random.nextInt(400, 650));
+                Time.sleepUntil(()->Inventory.contains(VIAL_WATER), 2000);
             }
             Bank.close();
         }

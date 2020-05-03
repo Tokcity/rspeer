@@ -3,8 +3,8 @@ package org.tokcity;
 import org.rspeer.script.ScriptMeta;
 import org.rspeer.script.task.Task;
 import org.rspeer.script.task.TaskScript;
-
 import org.rspeer.ui.Log;
+
 import org.tokcity.tasks.bank;
 import org.tokcity.tasks.clean;
 import org.tokcity.tasks.mix;
